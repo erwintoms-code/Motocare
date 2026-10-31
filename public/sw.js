@@ -1,5 +1,5 @@
-const CACHE = 'motocare-v21-shell';
-const ASSETS = ['/', '/index.html', '/manifest.webmanifest'];
+const CACHE = 'motocare-v22-shell';
+const ASSETS = ['/', '/index.html', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png', '/icons/icon-512-maskable.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
   self.skipWaiting();
